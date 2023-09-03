@@ -1,0 +1,18 @@
+:root {
+  --orange: #ff6730;
+  --lightOrange: #e39c82;
+  --green: #00904a;
+  --lightGreen: #90ee90;
+  --blue: #0000ff;
+  --lightBlue: #9d9de0;
+  --black: #000;
+  --lightGray: #90989f;
+  --darkColor: #3F4A54;
+}
+
+.App {
+  mix-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

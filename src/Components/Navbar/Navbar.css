@@ -1,0 +1,7 @@
+.image2 {
+    object-fit: cover;
+    filter: brightness(0) saturate(100%) invert(18%) sepia(87%) saturate(897%) hue-rotate(174deg) brightness(94%) contrast(97%);
+    width: 100%;
+    height: 50%;
+}
+
