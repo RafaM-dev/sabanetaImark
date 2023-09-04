@@ -23,7 +23,7 @@ export const About = () => {
       >
         <div className="flex flex-wrap items-center justify-center">
           <div className="w-full md:w-1/2 sm:w-4/5 px-4">
-            <div className="grid grid-cols-3 md:grid-cols-2 gap-2 md:gap-4 mb-7 sm:mb-0">
+            <div className="grid grid-cols-3 md:grid-cols-2 gap-2 md:gap-4 mb-0 md:mb-7 sm:mb-0">
               <div className="col-span-1 w-full h-auto ">
                 <img
                   src={about1}

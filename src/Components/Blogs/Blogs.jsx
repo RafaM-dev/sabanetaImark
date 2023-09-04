@@ -35,10 +35,10 @@ export const Blogs = ({ fecha, anio, img, titulo, contenido, id }) => {
           </p>
         </div>
 
-        <div className="sm:flex sm:items-end sm:justify-end">
+        <div className="flex sm:items-end sm:justify-end m-auto">
           <Link
             to={`/Blogs/${id}`}
-            className="block bg-orangeBtn px-5 py-3 text-center text-xs font-bold uppercase text-white transition hover:bg-darkOrange rounded-xl"
+            className="block bg-orangeBtn md:px-5 md:py-3 p-2 text-center text-xs font-bold uppercase text-white transition hover:bg-darkOrange rounded-xl"
           >
             Leer Relato
           </Link>

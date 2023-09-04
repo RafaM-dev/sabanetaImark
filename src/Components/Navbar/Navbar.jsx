@@ -40,7 +40,7 @@ export const Navbar = () => {
             </button>
             {isSubMenuOpen && (
               <motion.div
-                className="absolute right-0 left-0  p-2 bg-white rounded-lg shadow-lg  w-full"
+                className="absolute right-0 left-0  p-2 bg-white rounded-lg shadow-lg  w-[7rem]"
                 initial={{ opacity: 0, scale: 0.7 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.2 }}
@@ -85,7 +85,7 @@ export const Navbar = () => {
             >
               Nuestra Visión
             </Link>
-            <Link className="hover:text-[#ff6730] transition" to="/Blogs">
+            <Link className="block hover:text-[#ff6730] transition" to="/Blogs">
               Relatos
             </Link>
             <div
@@ -114,6 +114,9 @@ export const Navbar = () => {
                 </motion.div>
               )}
             </div>
+            <Link className="block hover:text-[#ff6730] transition" to="/TuVision">
+              Tu visión
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
