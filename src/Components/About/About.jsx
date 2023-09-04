@@ -8,8 +8,8 @@ export const About = () => {
   const { refs: refsDiv1, controls: controlsDiv1 } = useInViewWithAnimation();
 
   return (
-    <section className="px-4 sm:py-8 2xl:py-35 relative pt-16">
-      <div className="absolute w-44 h-40 left-52 bg-greenPrimary blur-3xl rounded-full z-0"></div>
+    <section className="px-4 sm:py-8 2xl:py-35 relative md:pt-16 pt-8">
+      <div className=" w-44 h-40 left-52 bg-greenPrimary blur-3xl rounded-full z-0 md:absolute hidden"></div>
       <motion.div
         ref={refsDiv1.div1}
         className="container mx-auto relative"
@@ -23,24 +23,31 @@ export const About = () => {
       >
         <div className="flex flex-wrap items-center justify-center">
           <div className="w-full md:w-1/2 sm:w-4/5 px-4">
-            <div className="grid grid-cols-2 gap-4 mb-7 sm:mb-0">
+            <div className="grid grid-cols-3 md:grid-cols-2 gap-2 md:gap-4 mb-7 sm:mb-0">
               <div className="col-span-1 w-full h-auto ">
                 <img
                   src={about1}
                   alt="About Image 1"
-                  className="rounded-xl shadow-xl mb-8 object-cover filter"
+                  className="rounded-xl shadow-xl mb-8 object-cover filter  h-56 md:h-auto"
                 />
                 <img
                   src={about2}
                   alt="About Image 2"
-                  className="rounded-xl shadow-xl  object-cover filter"
+                  className="rounded-xl shadow-xl object-cover filter hidden md:block"
                 />
               </div>
-              <div className="col-span-1  p-4 flex  h-auto  items-center ">
+              <div className="col-span-1 w-full h-auto block md:hidden">
+                <img
+                  src={about2}
+                  alt="About Image 2"
+                  className="rounded-xl shadow-xl  object-cover filter h-56 md:h-auto"
+                />
+              </div>
+              <div className="col-span-1 w-full block md:p-4 md:flex  h-auto  md:items-center ">
                 <img
                   src={about3}
                   alt="About Image 3"
-                  className="rounded-xl shadow-xl h-56 sm:h-96  object-cover filter"
+                  className="rounded-xl shadow-xl  h-56 md:h-auto object-cover filter"
                 />
               </div>
             </div>

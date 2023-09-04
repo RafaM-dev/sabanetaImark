@@ -87,15 +87,15 @@ export const ContactForm = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
-        <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-center text-titleColor dark:text-white ">
+        <h2 className="mb-4 text-3xl md:text-5xl tracking-tight font-extrabold text-center text-titleColor dark:text-white ">
           Queremos conocer tu opinión para el futuro de Sabaneta
         </h2>
-        <p className="my-10 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl ">
+        <p className="my-5 sm:my-10 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400  text-lg sm:text-xl ">
           Si tienes algún aporte o comentario para el Plan estratégico (2023 -
           2033), escríbenos y comparte tu visión con nosotros.
         </p>
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="md:w-1/2 relative rounded-xl ">
+          <div className="md:w-1/2 relative rounded-xl md:block hidden">
             <img
               src={iglesia}
               alt="Iglesia"

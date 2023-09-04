@@ -76,20 +76,17 @@ export const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3 }}
           >
-            <Link className="block hover:text-[#ff6730] transition" to="/">
+            <Link className="block hover:text-[#ff6730] transition" to="/" >
               Inicio
             </Link>
             <Link
               className="block hover:text-[#ff6730] transition"
-              to="/ZonasComunes"
+              to="/Vision"
             >
-              Blogs
+              Nuestra Visión
             </Link>
-            <Link
-              className="block bg-[#ff6730] hover:bg-[#ff6730] text-white px-4 py-3 rounded-lg mt-4 transition"
-              to="/ZonasComunes"
-            >
-              Conócenos
+            <Link className="hover:text-[#ff6730] transition" to="/Blogs">
+              Relatos
             </Link>
             <div
               className="relative group z-10"
@@ -97,7 +94,7 @@ export const Navbar = () => {
               onMouseLeave={handleSubMenuToggle}
             >
               <button className="hover:text-[#ff6730] transition focus:outline-none ">
-                Infografías
+                Recursos
               </button>
               {isSubMenuOpen && (
                 <motion.div

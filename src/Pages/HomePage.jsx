@@ -34,7 +34,7 @@ export const HomePage = () => {
         <h1 className="text-center text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl w-full  pt-10 text-family-roboto sans-serif text-titleColor">
           Avancemos Juntos
         </h1>
-        <h2 className="text-justify  tracking-tight  max-w-[85rem] mx-4 font-semibold text-sm py-5 sm:text-center sm:mx-10 lg:mx-auto lg:text-2xl sm:text-xl  sm:py-10 ">
+        <h2 className="text-justify  tracking-tight  max-w-[85rem] mx-4 font-semibold text-lg py-5 sm:text-center sm:mx-10 lg:mx-auto lg:text-2xl sm:text-xl  sm:py-10 ">
           Identificamos nuestros activos patrimoniales, aquellos que han marcado nuestra historia y que nos identifican como sabaneteños. Estamos diseñando la proyección que será un plan donde la ruta a seguir sea clara y donde las líneas estratégicas priorizadas aporten a la Sabaneta que soñamos.</h2>
         <TimeLine param="etapa1" />
         <TimeLine param="etapa2" />

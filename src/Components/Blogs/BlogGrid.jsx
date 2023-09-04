@@ -18,7 +18,7 @@ export const BlogGrid = () => {
   });
   return (
     <section>
-      <article className="grid grid-cols-3 gap-4 ">
+      <article className="grid lg:grid-cols-3 gap-4 mb-4">
         {blogsComponents}
       </article>
     </section>

@@ -3,12 +3,9 @@ import { TimeLineItem } from "./TimeLineItem";
 
 export const TimeLine = ({ param }) => {
   const etapaObj = TimeLineData.find((item) => param in item);
-
   if (!etapaObj) {
-    // Handle the case when the provided param doesn't match any data
     return <div>No data found for the provided param</div>;
   }
-
   const currentEtapa = etapaObj[param];
   const textStyle = { color: currentEtapa.color }; // Inline style for text color
 
@@ -24,14 +21,14 @@ export const TimeLine = ({ param }) => {
         <div className="flex flex-col items-center mx-auto">
           <div className="relative wrap overflow-hidden p-4">
             <div
-              className="border-2-2 absolute h-full border md:right-2/4  right-[95%] sm:right-[96%] "
+              className="absolute h-full border md:right-2/4 right-[95%] sm:right-[96%] "
               style={{
                 border: `1px solid ${currentEtapa.color}`,
                 borderRadius: "1%",
               }}
             ></div>
             <div
-              className="border-2-2 absolute h-full border md:left-2/4 left-[4%] sm:left-[4%]"
+              className=" absolute h-full border md:left-2/4 left-[4%] sm:left-[4%]"
               style={{
                 border: `1px solid ${currentEtapa.color}`,
                 borderRadius: "1%",

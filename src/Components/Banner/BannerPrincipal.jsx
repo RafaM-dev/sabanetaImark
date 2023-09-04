@@ -6,7 +6,7 @@ export const BannerPrincipal = () => {
       <img
         src={banner}
         alt="Banner"
-        className="w-full h-auto object-cover md:h-64 lg:h-auto"
+        className="object-cover "
       />
 
     </div>

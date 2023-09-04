@@ -10,7 +10,7 @@ const ImageItem = ({ src, alt, styles }) => (
 const VideoItem = ({ src, src2 }) => (
   <video
     controls
-    className={`${src2 ? "h-[31rem]" : "h-auto"} rounded-xl w-full`}
+    className={`${src2 ? "h-[19rem] md:h-[31rem]" : "h-auto"} rounded-xl w-full`}
   >
     <source src={src} type="video/mp4" />
     Tu navegador no admite la reproducción de videos en formato MP4.
@@ -33,7 +33,7 @@ export const ModalTimeLine = ({ data, closeModal }) => {
         initial={{ opacity: 0, scale: 0.1 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.5 }}
-        className="bg-white p-6 rounded-xl shadow-lg overflow-hidden"
+        className="bg-white p-6 rounded-xl shadow-lg overflow-hidden h-full md:h-auto  "
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex w-full mb-2">
@@ -48,11 +48,10 @@ export const ModalTimeLine = ({ data, closeModal }) => {
           </button>
         </div>
 
-        <div className="max-h-[45rem] max-w-7xl overflow-y-auto">
+        <div className="md:h-[45rem] h-[85%] max-w-7xl overflow-y-auto">
           <div
-            className={`${
-              data.video1 ? "md:grid-cols-3" : "md:grid-cols-2"
-            } grid grid-cols-2  gap-4`}
+            className={`${data.video1 ? "md:grid-cols-3" : "md:grid-cols-2"
+              } grid md:grid-cols-2  gap-4`}
           >
             <div className="grid gap-4 ">
               <ImageItem
@@ -67,7 +66,7 @@ export const ModalTimeLine = ({ data, closeModal }) => {
               />
             </div>
             {data.video1 ? (
-              <div className=" grid gap-4 ">
+              <div className="grid gap-4">
                 <VideoItem src={data.video1} src2={data.video2} />
                 {data.video2 ? (
                   <VideoItem src={data.video2} src2={data.video2} />

@@ -6,7 +6,6 @@ export const TuVisionPage = () => {
   return (
     <section>
       <Banner img={bannerTuVision} />
-
       <ContactForm />
     </section>
   );
