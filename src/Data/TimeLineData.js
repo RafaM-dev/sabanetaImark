@@ -62,7 +62,6 @@ export const TimeLineData = [
             img3: Ciudadano3,
             img4: Ciudadano4,
             video1: CiudadanoVid,
-            video2: CiudadanoVid,
           },
           ilustracion: etapa1Ilus,
         },
