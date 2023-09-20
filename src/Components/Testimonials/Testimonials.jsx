@@ -24,6 +24,7 @@ export const Testimonials = ({ descripcion, name, img }) => {
               alt="Persona"
               src={img}
               className="h-16 w-16 rounded-full object-cover"
+              loading="lazy"
             />
 
             <div>

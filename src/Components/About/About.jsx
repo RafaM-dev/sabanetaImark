@@ -29,11 +29,13 @@ export const About = () => {
                   src={about1}
                   alt="About Image 1"
                   className="rounded-xl shadow-xl mb-8 object-cover filter  h-56 md:h-auto"
+                  loading="lazy"
                 />
                 <img
                   src={about2}
                   alt="About Image 2"
                   className="rounded-xl shadow-xl object-cover filter hidden md:block"
+                  loading="lazy"
                 />
               </div>
               <div className="col-span-1 w-full h-auto block md:hidden">
@@ -41,6 +43,7 @@ export const About = () => {
                   src={about2}
                   alt="About Image 2"
                   className="rounded-xl shadow-xl  object-cover filter h-56 md:h-auto"
+                  loading="lazy"
                 />
               </div>
               <div className="col-span-1 w-full block md:p-4 md:flex  h-auto  md:items-center ">
@@ -48,6 +51,7 @@ export const About = () => {
                   src={about3}
                   alt="About Image 3"
                   className="rounded-xl shadow-xl  h-56 md:h-auto object-cover filter"
+                  loading="lazy"
                 />
               </div>
             </div>

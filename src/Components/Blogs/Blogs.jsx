@@ -18,6 +18,7 @@ export const Blogs = ({ fecha, anio, img, titulo, contenido, id }) => {
           alt="Img"
           src={img}
           className="aspect-square h-full w-full object-cover rounded xl:h-56 sm:h-44"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-1 flex-col justify-between">

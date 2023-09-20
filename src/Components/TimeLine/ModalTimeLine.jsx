@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ImageItem = ({ src, alt, styles }) => (
   <div>
-    <img className={`${styles} rounded-lg object-cover`} src={src} alt={alt} />
+    <img className={`${styles} rounded-lg object-cover`} src={src} alt={alt} loading="lazy" />
   </div>
 );
 
