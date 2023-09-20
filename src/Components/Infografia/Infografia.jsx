@@ -36,7 +36,7 @@ export const Infografia = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col md:items-center md:flex-row justify-center mb-10 text-titleColor font-semibold text-lg md:text-2xl my-10 md:mx-0 mx-2">
+        <div className="flex flex-col md:items-center md:flex-row justify-center mb-10 text-titleColor font-semibold text-lg md:text-2xl my-10 md:mx-0 mx-2 text-center">
           <p className="md:mr-3">
             ¡Haz clic en el enlace para descargar el Informe!
           </p>

@@ -17,7 +17,7 @@ export const Modal = ({
 
   return (
     <div className="modal" onClick={onClose}>
-      <div className="modal-content" onClick={handleModalClick}>
+      <div className="modal-content overflow-auto" onClick={handleModalClick}>
         <button className="close-button" onClick={onClose}>
           <AiOutlineClose size={25} />
         </button>
