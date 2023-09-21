@@ -21,27 +21,22 @@ export const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link to="/" className="hover:underline">
+                  <Link to="/Vision" className="hover:underline">
                     Nuestra Visión
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link to="/" className="hover:underline">
-                    Nuestra Ruta
+                  <Link to="/Blogs" className="hover:underline">
+                    Relatos
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link to="/" className="hover:underline">
-                    Blogs
+                  <Link to="/Infografia" className="hover:underline">
+                    Recursos
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link to="/" className="hover:underline">
-                    Tendencias en el mundo
-                  </Link>
-                </li>
-                <li className="mb-2">
-                  <Link to="/" className="hover:underline">
+                  <Link to="/TuVision" className="hover:underline">
                     Tu Visión
                   </Link>
                 </li>
