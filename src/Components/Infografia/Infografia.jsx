@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Info.css";
 import { Modal } from "../Modal/Modal";
 import Doc from "../../Docs/Informe Investigación Digital Sabaneta.pdf";
+import Doc2 from "../../Docs/Informe Investigación Social Sabaneta.pdf";
 import { InfografiaData } from "../../Data/InfografiaData";
 
 export const Infografia = () => {
@@ -42,6 +43,14 @@ export const Infografia = () => {
           </p>
           <a href={Doc} download className="underline ">
             Informe de investigación
+          </a>
+        </div>
+        <div className="flex flex-col md:items-center md:flex-row justify-center mb-10 text-titleColor font-semibold text-lg md:text-2xl my-10 md:mx-0 mx-2 text-center">
+          <p className="md:mr-3">
+            ¡Haz clic en el enlace para descargar el Informe de investigación social!
+          </p>
+          <a href={Doc2} download className="underline ">
+            Informe de investigación social
           </a>
         </div>
         {showModal && <Modal {...modalProps} onClose={toggleModal} />}

@@ -18,8 +18,8 @@ export const TimeLine = ({ param }) => {
         <h2 className="text-base md:text-xl lg:text-2xl text-justify mx-4 md:mx-0 md:text-center font-semibold mt-4" style={textStyle}>
           {currentEtapa.descripcionEtapa}
         </h2>
-        <div className="flex flex-col items-center mx-auto">
-          <div className="relative wrap overflow-hidden p-4">
+        <div className="flex flex-col items-center mx-auto py-12">
+          <div className="relative wrap overflow-hidden">
             <div
               className="absolute h-full border md:right-2/4 right-[95%] sm:right-[96%] "
               style={{

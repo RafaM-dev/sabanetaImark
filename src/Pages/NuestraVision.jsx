@@ -4,6 +4,7 @@ import { ObjetivosProyecto } from "../Components/PlanEstrategico/ObjetivosProyec
 import bannerVision from "../assets/Banners/NuestraVision.png";
 import bannerVisionResponsive from "../assets/Banners/NuestraVisionResponsive.png";
 import { Banner } from "../Components/Banner/Banner";
+import { Vision } from "../Components/Vision/Vision";
 
 export const NuestraVision = () => {
   const imageUrl = window.innerWidth <= 768 ? bannerVisionResponsive : bannerVision;
@@ -13,11 +14,10 @@ export const NuestraVision = () => {
       <Banner img={imageUrl} />
       <div className="bg-image-container w-full ">
         <PlanEstrategico />
+        <Vision />
         <ObjetivosProyecto />
       </div>
       <EtapasProyecto />
-
-
     </section>
   );
 };

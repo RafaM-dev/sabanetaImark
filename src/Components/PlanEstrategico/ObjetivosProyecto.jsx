@@ -3,7 +3,7 @@ import { CardPlanItem } from "./CardPlanItem";
 
 export const ObjetivosProyecto = () => {
   return (
-    <section className="container mx-auto md:my-10 ">
+    <section className="container mx-auto md:my-10 my-10 ">
       <h2 className="text-3xl md:text-5xl lg:text-5xl font-semibold mb-6 text-center text-titleColor">
         Pero, ¿para qué un Plan estratégico municipal?
       </h2>

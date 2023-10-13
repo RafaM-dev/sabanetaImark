@@ -6,20 +6,20 @@ export const Testimonials = ({ descripcion, name, img }) => {
   const { refs: refsDiv1, controls: controlsDiv1 } = useInViewWithAnimation();
 
   return (
-    <section className="bg-white lg:w-3/6 xl:w-1/4 mb-3 md:mb-8 lg:mb-14 ">
+    <section className="  " >
       <motion.div
         className="max-w-screen-xl"
         ref={refsDiv1.div1}
         variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, x: 75 },
+          visible: { opacity: 1, x: 0 },
         }}
         initial="hidden"
         animate={controlsDiv1.div1}
         transition={{ duration: 0.8, delay: 0.25 }}
       >
         <blockquote className="rounded-xl bg-gray-50 p-8">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 ">
             <img
               alt="Persona"
               src={img}

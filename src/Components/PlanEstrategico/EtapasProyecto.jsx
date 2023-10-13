@@ -17,7 +17,7 @@ export const EtapasProyecto = () => {
             Participación e identidad
           </Link>
           <Link className="text-base md:text-xl bg-orangeBtn text-center text-white font-semibold my-2 md:my-[5px] p-2 rounded-xl w-full md:w-[28rem] hover:bg-darkOrange hover:scale-105 transition-transform">
-            Co creación plataforma estratégicas
+            Co creación plataforma estratégica
           </Link>
           <Link className="text-base md:text-xl bg-orangeBtn text-center text-white font-semibold my-2 md:my-[5px] p-2 rounded-xl w-full md:w-[28rem] hover:bg-darkOrange hover:scale-105 transition-transform">
             Diseño del despliegue estratégico

@@ -27,15 +27,18 @@ import BaquereVid1 from "../assets/TallerBaquereña/Video1.mp4";
 
 // ilustraciones
 
-import etapa1Ilus from "../assets/Animaciones/13.mp4"
-import etapa3Ilus from "../assets/Animaciones/23.mp4"
 import etapa2Ilus from "../assets/Animaciones/15.mp4"
 import etapa4Ilus from "../assets/Animaciones/27.mp4"
-import etapa5Ilus from "../assets/Animaciones/12.mp4"
 import etapaProxima from "../assets/Animaciones/16.mp4"
-import etapaProxima2 from "../assets/Animaciones/19.mp4"
-import etapaProxima3 from "../assets/Animaciones/22.mp4"
 
+//videos equipo
+import team1 from "../assets/Equipo/team1.mp4"
+import team2 from "../assets/Equipo/team2.mp4"
+import team3 from "../assets/Equipo/team3.mp4"
+import team4 from "../assets/Equipo/team4.mp4"
+import team5 from "../assets/Equipo/team5.mp4"
+import team6 from "../assets/Equipo/team6.mp4"
+import team7 from "../assets/Equipo/team7.mp4"
 
 export const TimeLineData = [
   {
@@ -50,10 +53,10 @@ export const TimeLineData = [
           id: 1,
           titulo: "Ciudadanías propositivas",
           fecha: "24 Julio, 2023",
-          descripcion:
+          descripcionModal:
             "Identificamos los activos patrimoniales, ambientales, culturales y sociales para fortalecerlos estratégicamente a diez años. La comunidad sabaneteña ha aportado sus propuestas ",
-          posicion: "right-timeline",
-          textPos: "text-right",
+          posicion: "left-timeline",
+          textPos: "text-left",
           ref: "refsDiv1",
           controls: "controlsDiv1",
           modal: {
@@ -63,13 +66,14 @@ export const TimeLineData = [
             img4: Ciudadano4,
             video1: CiudadanoVid,
           },
-          ilustracion: etapa1Ilus,
+          linkGaleria: 'Ver Más',
+          titleModal: 'Contenido Multimedía'
         },
         TimeLine2: {
           id: 2,
           titulo: "Empresas y organizaciones comprometidas con el futuro",
           fecha: "27 Julio, 2023",
-          descripcion:
+          descripcionModal:
             "Representantes del sector productivo y social, aportaron sus ideas e identificaron los aspectos a mejorar. El turismo, el emprendimiento, las empresas que han marcado la historia y el presente del municipio hicieron su contribución al Plan de Proyección.",
           posicion: "left-timeline",
           textPos: "text-left",
@@ -83,16 +87,17 @@ export const TimeLineData = [
             video1: SectorVid1,
           },
           ilustracion: etapa2Ilus,
-
+          linkGaleria: 'Ver Más',
+          titleModal: 'Contenido Multimedía'
         },
         TimeLine3: {
           id: 3,
           titulo: "La ruralidad sabaneteña, presente en la visión estratégica",
           fecha: "1 Agosto, 2023",
-          descripcion:
+          descripcionModal:
             "Las propuestas para mejorar la calidad de vida del municipio se construyen desde el desarrollo con enfoque territorial del municipio.",
-          posicion: "right-timeline ",
-          textPos: "text-right",
+          posicion: "left-timeline",
+          textPos: "text-left",
           ref: "refsDiv3",
           controls: "controlsDiv3",
           modal: {
@@ -103,14 +108,14 @@ export const TimeLineData = [
             video1: VerdeasVid1,
             video2: "",
           },
-          ilustracion: etapa3Ilus,
-
+          linkGaleria: 'Ver Más',
+          titleModal: 'Contenido Multimedía'
         },
         TimeLine4: {
           id: 4,
           titulo: "Reserva La Romera, oasis ecológico y patrimonio sabaneteño",
           fecha: "13 Agosto, 2023",
-          descripcion:
+          descripcionModal:
             "Los habitantes del municipio coinciden en la importancia estratégica y ecológica de La Romera. Servicios ecosistémicos y aportes ecoturísticos por descubrir.",
           posicion: "left-timeline",
           textPos: "text-left",
@@ -125,16 +130,17 @@ export const TimeLineData = [
             video2: "",
           },
           ilustracion: etapa4Ilus,
-
+          linkGaleria: 'Ver Más',
+          titleModal: 'Contenido Multimedía'
         },
         TimeLine5: {
           id: 5,
           titulo: "La cultura sabaneteña:  La Barquereña y el parque principal",
           fecha: "2 Agosto, 2023",
-          descripcion:
+          descripcionModal:
             "El arte y la cultura recorren cada rincón del municipio. En la Casa Cultural La Barquereña convergen la música, la pintura, la danza y la creatividad de los sabaneteños. En el parque central, visitantes y locales comparten los patrimonios gastronómicos y religiosos de Sabaneta.",
-          posicion: "right-timeline",
-          textPos: "text-right",
+          posicion: "left-timeline",
+          textPos: "text-left",
           ref: "refsDiv5",
           controls: "controlsDiv5",
           modal: {
@@ -145,8 +151,8 @@ export const TimeLineData = [
             video1: ParqueVid2,
             video2: BaquereVid1,
           },
-          ilustracion: etapa5Ilus,
-
+          linkGaleria: 'Ver Más',
+          titleModal: 'Contenido Multimedía'
         },
       },
     },
@@ -155,17 +161,32 @@ export const TimeLineData = [
     etapa2: {
       id: 2,
       tituloEtapa: "Etapa 2: Co creamos la plataforma estratégica",
-      descripcionEtapa: "Estamos en la conformación de un comité de planeación con diversidad de actores que será el encargado de definir las líneas decisivas y fundamentales para la década. ",
+      descripcionEtapa: "Estamos en la conformación de un comité de planeación con diversidad de actores que será el encargado de definir las líneas decisivas y fundamentales para la década.",
       color: "#36B8C5",
-
       objetos: {
         TimeLine1: {
           id: 1,
-          posicion: "right-timeline",
-          textPos: "text-right",
-          ref: "refsDiv1",
-          controls: "controlsDiv1",
+          titulo: "Miradas diversas por una Sabaneta cercana 2023 - 2033",
+          fecha: "05 septiembre, 2023",
+          descripcionModal: 'Después de culminar la primera etapa y encontrarnos con personas reconocidas en sus áreas, profesiones, oficios o representatividad, les invitamos a hacer parte del Comité de proyección para la co-creación de la plataforma estratégica.',
+          descripcionModal2: 'En los encuentros compartimos y analizamos los activos, las dimensiones de valor, así como la propuesta del grupo de investigación.Leímos y ajustamos la propuesta, validándola con el Comité. La puedes encontrar',
+          aqui: true,
+          posicion: "left-timeline",
+          textPos: "text-left",
+          ref: "refsDiv5",
+          controls: "controlsDiv5",
+          modal: {
+            video1: team1,
+            video2: team7,
+            video3: team3,
+            video4: team4,
+            video5: team5,
+            video6: team6,
+            video7: team2,
+          },
           ilustracion: etapaProxima,
+          linkGaleria: 'Conoce a los integrantes',
+          titleModal: 'Integrantes del Comité de Proyección'
         },
       },
     },
@@ -176,17 +197,7 @@ export const TimeLineData = [
       tituloEtapa: "Etapa 3: Diseñamos el despliegue estratégico",
       descripcionEtapa: "Después de tener las líneas de la estrategia, identificaremos y generaremos los proyectos de acuerdo a la priorización previa, para hacer su selección y sus presupuestos.",
       color: "#006944",
-
       objetos: {
-        TimeLine1: {
-          id: 1,
-          posicion: "right-timeline",
-          textPos: "text-right",
-          ref: "refsDiv1",
-          controls: "controlsDiv1",
-          ilustracion: etapaProxima2,
-
-        },
       },
     },
   },
@@ -196,16 +207,7 @@ export const TimeLineData = [
       tituloEtapa: "Etapa 4: Condensamos nuestro Plan de proyección",
       descripcionEtapa: "Aquí es cuando condensamos las ideas y propuestas realizadas desde la primera etapa. Haremos la redacción del Plan y su socialización. ",
       color: "#36B8C5",
-
       objetos: {
-        TimeLine1: {
-          id: 1,
-          posicion: "right-timeline",
-          textPos: "text-right",
-          ref: "refsDiv1",
-          controls: "controlsDiv1",
-          ilustracion: etapaProxima3,
-        },
       },
     },
   },

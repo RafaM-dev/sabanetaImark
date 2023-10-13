@@ -17,6 +17,12 @@ h1 {
   background-position: center; /* Centrar la imagen */
   background-repeat: no-repeat; /* Evitar que la imagen se repita */
 }
+.bg-image-text {
+  background-image: url("./assets/Banners-Visionemos-Sabaneta.png");
+  background-size: cover; /* Ajustar la imagen al contenedor */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
 .bg-image-greenBlack {
   position: relative; /* Asegurarse de que la posición esté definida para los elementos secundarios */
   background-image: url("./assets/1.png");

@@ -1,15 +1,13 @@
 import { TimeLine } from "../Components/TimeLine/TimeLine";
 import { Blogs } from "../Components/Blogs/Blogs";
-import { Testimonials } from "../Components/Testimonials/Testimonials";
 import { BlogsData } from "../Data/BlogsData";
 import { About } from "../Components/About/About";
 import { Link } from "react-router-dom";
-import test1 from "../assets/testimonio1.png";
-import test2 from "../assets/testimonio2.png";
-import test3 from "../assets/testimonio3.png";
 import { BannerPrincipal } from "../Components/Banner/BannerPrincipal";
+import { Slider } from "../Components/Slider/Slider";
 
 export const HomePage = () => {
+
   const blogsComponents = Object.keys(BlogsData)
     .map((blogKey) => {
       const { id, fecha, anio, img, titulo, descripcion } = BlogsData[blogKey];
@@ -26,6 +24,7 @@ export const HomePage = () => {
       );
     })
     .slice(0, 3);
+
   return (
     <>
       <BannerPrincipal />
@@ -34,9 +33,18 @@ export const HomePage = () => {
         <h1 className="text-center text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl w-full  pt-10 text-family-roboto sans-serif text-titleColor">
           Avancemos Juntos
         </h1>
-        <h2 className="text-justify  tracking-tight  max-w-[85rem] mx-4 font-semibold text-lg py-5 sm:text-center sm:mx-10 lg:mx-auto lg:text-2xl sm:text-xl  sm:py-10 ">
+        <h2 className="text-justify  tracking-tight  max-w-[85rem] mx-4 font-semibold text-lg py-5 sm:text-center sm:mx-10 lg:mx-auto lg:text-2xl sm:text-lg  sm:py-10 ">
           Identificamos nuestros activos patrimoniales, aquellos que han marcado nuestra historia y que nos identifican como sabaneteños. Estamos diseñando la proyección que será un plan donde la ruta a seguir sea clara y donde las líneas estratégicas priorizadas aporten a la Sabaneta que soñamos.</h2>
         <TimeLine param="etapa1" />
+        <div className="bg-image-text w-full h-auto flex justify-center items-center ">
+          <h2 className="text-justify text-white tracking-tight max-w-[100rem] mx-4 font-medium text-base py-5  sm:mx-10 lg:mx-10 lg:text-2xl sm:text-xl  sm:py-10">
+            Después de haber tenido espacios de creación colectiva con la ciudadanía, el sector social y productivo, emprendedor y de haber caminado los barrios y veredas, priorizamos las líneas estratégicas para el desarrollo de Sabaneta. En este proceso que avanza de la mano de la Universidad de Antioquia, encontramos que hay una percepción del municipio como una ciudad dormitorio, una Sabaneta caracterizada por el desarrollo habitacional, donde sus habitantes trabajan y realizan actividades en otros municipios.
+            <br />
+            <br />
+            Las dimensiones que más valoramos como sabaneteños son la Calidad de vida y la forma en que vivimos, la educación, la salud, la seguridad que sentimos y tenemos recorriendo el municipio, la movilidad, el entretenimiento, el aire de pueblo que ha perdurado hasta hoy, la inclusión, la economía, el turismo ecológico, religioso y el ambiente sostenible.
+          </h2>
+        </div>
+
         <TimeLine param="etapa2" />
         <TimeLine param="etapa3" />
         <TimeLine param="etapa4" />
@@ -59,31 +67,9 @@ export const HomePage = () => {
           </Link>
         </button>
         <h1 className="text-center text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl w-full my-14 lg:my-20 text-titleColor">
-          Voces de la comunidad
+          Voces sabaneteñas
         </h1>
-        <div className="flex flex-wrap justify-center lg:gap-4 md:mt-5 lg:mt-10 mx-8">
-          <Testimonials
-            descripcion={
-              "“Yo suelo ser una ciudadana de a pie, no existo en escenarios electorales, pero sí en una comunidad... somos corresponsables, somos de sentimientos y emociones para con la naturaleza”"
-            }
-            name={"Adela, vereda La Doctora"}
-            img={test1}
-          />
-          <Testimonials
-            descripcion={
-              "“Mi papá tuvo una finca de café en La Doctora, vivían cuando tenían 40 años donde se unen Las Brisas. A mí me tocó hacer la primera calle importante en sabaneta que se convirtió en la Avenida Pilsen”"
-            }
-            name={"Relatos ciudadanos "}
-            img={test2}
-          />
-          <Testimonials
-            descripcion={
-              "“Nos motivó a venirnos a Sabaneta el ambiente, muy familiar, hemos visto el parque lleno de familia, de gente, y la rumba es tranquila, como de pueblo y en el día se puede caminar tranquilamente, el ambiente y la seguridad se nota”"
-            }
-            name={"Liceth Calderón"}
-            img={test3}
-          />
-        </div>
+        <Slider />
       </div>
     </>
   );
